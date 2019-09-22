@@ -7,10 +7,10 @@ def find_subarr(input_lst, num):
     sum = 0
     for indx, zn in enumerate(input_lst):
         sum += zn
-        if sum - num in dict:
+        if sum - num in tmp:
             return(dict[sum - num], indx)
         elif zn == num:
             return(indx, indx)
         else:
-            dict[sum - val] = indx
+            dict[sum - zn] = indx
     return()
