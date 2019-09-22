@@ -8,9 +8,9 @@ def find_subarr(input_lst, num):
     for indx, zn in enumerate(input_lst):
         sum += zn
         if sum - num in tmp:
-            return(dict[sum - num], indx)
+            return(tmp[sum - num], indx)
         elif zn == num:
             return(indx, indx)
         else:
-            dict[sum - zn] = indx
+            tmp[sum - zn] = indx
     return()
