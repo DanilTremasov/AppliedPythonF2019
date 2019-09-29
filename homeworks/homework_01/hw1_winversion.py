@@ -3,7 +3,7 @@
 
 
 def word_inversion(input_lst):
-    input_lst = input_lst[::-1]
+    input_lst.reverse()
     n = 0
     for i in range(len(input_lst)):
         if input_lst[i] == ' ':
